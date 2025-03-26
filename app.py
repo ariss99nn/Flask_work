@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
-from services.usuario_service import crear_usuario, login
-from services.producto_service import crear_producto, listar_productos
+from services.user_services import crear_usuario, login
+from services.product_service import crear_producto, listar_productos
 app = Flask(__name__)
 app.secret_key = 'supersecretkey' # Clave secreta para mensajes flash
 # Ruta principal
